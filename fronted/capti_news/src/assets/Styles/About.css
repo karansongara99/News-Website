@@ -1,0 +1,133 @@
+/* =============================
+   Global Styles
+============================= */
+.about-container {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =============================
+   Intro Section
+============================= */
+.intro-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.intro-section h1 {
+  font-size: 2.75rem;
+  color: #1d3557;
+  margin-bottom: 0.5rem;
+}
+
+.intro-section p {
+  font-size: 1.125rem;
+  color: #444;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* =============================
+   Two Column Section
+============================= */
+.image-text-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.image-side,
+.text-side {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-side img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-side h2 {
+  font-size: 1.75rem;
+  color: #1d3557;
+  margin-bottom: 0.75rem;
+}
+
+.text-side p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* =============================
+   Photo Grid Section
+============================= */
+.photo-grid-section {
+  margin-top: 3rem;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.grid-item {
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: 300px;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item p {
+  margin-top: 0.75rem;
+  font-weight: 500;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* =============================
+   Responsive Design
+============================= */
+@media (max-width: 1024px) {
+  .grid-item {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .image-text-section {
+    flex-direction: column;
+  }
+
+  .grid-item {
+    flex: 1 1 100%;
+  }
+
+  .intro-section h1 {
+    font-size: 2rem;
+  }
+
+  .text-side h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro-section p,
+  .text-side p {
+    font-size: 1rem;
+  }
+}
